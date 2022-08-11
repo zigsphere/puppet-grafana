@@ -76,7 +76,7 @@ Puppet::Type.type(:grafana_datasource).provide(:grafana, parent: Puppet::Provide
           with_credentials: datasource['withCredentials'] ? :true : :false,
           basic_auth: datasource['basicAuth'] ? :true : :false,
           basic_auth_user: datasource['basicAuthUser'],
-          basic_auth_password: datasource['basicAuthPassword'],
+          basic_auth_password: datasource.fetch('basicAuthPassword', ''),
           json_data: datasource['jsonData'],
           secure_json_data: datasource['secureJsonData']
         }
