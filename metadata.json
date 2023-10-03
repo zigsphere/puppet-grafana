@@ -6,7 +6,6 @@
   "license": "Apache-2.0",
   "source": "https://github.com/voxpupuli/puppet-grafana.git",
   "project_page": "https://github.com/voxpupuli/puppet-grafana",
-  "issue_url": "https://github.com/voxpupuli/puppet-grafana/issues",
   "dependencies": [
     {
       "name": "puppetlabs/stdlib",
@@ -69,10 +68,14 @@
       "version_requirement": ">= 6.1.0 < 8.0.0"
     }
   ],
+  "issue_url": "https://github.com/voxpupuli/puppet-grafana/issues",
   "tags": [
     "grafana",
     "graphite",
     "influxdb",
     "monitoring"
-  ]
+  ],
+  "pdk-version": "2.7.1",
+  "template-url": "pdk-default#2.7.4",
+  "template-ref": "tags/2.7.4-0-g58edf57"
 }
